@@ -34,5 +34,7 @@ Undersatnding the actual logic of the game itself is very important.
 					Technologies used 
 
 Github
+
 Terminal
+
 Eclipse
