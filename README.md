@@ -19,9 +19,13 @@ At the end of the game, the app displays who has more points
 					##What I learned 
 
 A deeper dive into object oriented programming
+
 learning how to use multiple classes and methods 
+
 how to properly call methods and learning that methods can be called multple times based on where and when they are needed
+
 Placement is very important and help to diplay results properly to the screen.
+
 Undersatnding the actual logic of the game itself is very important. 
 
 
