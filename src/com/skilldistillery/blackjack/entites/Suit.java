@@ -1,7 +1,8 @@
 package com.skilldistillery.blackjack.entites;
 
 public enum Suit {
-	HEARTS("hearts"), SPADES("Spades"), CLUBS("Clubs"), DIAMONDS("Diamonds");
+	HEARTS("hearts"), SPADES("Spades"), 
+	CLUBS("Clubs"), DIAMONDS("Diamonds");
 
 	private String name;
 

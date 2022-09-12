@@ -1,12 +1,17 @@
 package com.skilldistillery.blackjack.entites;
 
 import java.util.ArrayList;
+
 import java.util.Collections;
 import java.util.List;
 
 public class Deck {
 	// every deck has list of cards
-	List<Card> deck = new ArrayList<>(52);
+	private ArrayList<Card> deck = new ArrayList<Card>(52);
+
+	public List<Card> getDeck() {
+		return deck;
+	}
 
 	// number of cards still in the deck
 	public int checkDeckSize() {
@@ -14,11 +19,16 @@ public class Deck {
 
 	}
 
+	// add card to deck
+	public void addCard(Card card) {
+		deck.add(card);
+	}
+
 	// removes a card
 	public Card dealCard() {
-		Card dealtCard = deck.remove(0);
+		Card dealtCard = deck.get(0);
+		deck.remove(0);
 		return dealtCard;
-		// deck.remove(0);
 	}
 
 	// shuffle the deck
@@ -32,8 +42,24 @@ public class Deck {
 				Card card = new Card(suit, rank);
 				deck.add(card);
 			}
-
 		}
-		System.out.print("Done creating " + deck.size());
+	}
+
+	public void draw(Card cards) {
+		System.out.println("drawing " + cards);
+	}
+
+//	@Override
+//	public String toString() {
+//		return "Deck [deck=" + deck + "]";
+//	}
+
+	public String toString() {
+		String output = " ";
+		for (Card c : deck) {
+			output += c;
+			output += "\n";
+		}
+		return output;
 	}
 }

@@ -14,6 +14,11 @@ public class Card {
 		this.suit = suit;
 		this.rank = rank;
 	}
+	
+	public Card(Card card) {
+		this.suit = card.getSuit();
+		this.rank = card.getRank();
+	}
 
 	public int getValue() {
 		return rank.getValue();
@@ -25,17 +30,17 @@ public class Card {
 		return suit;
 	}
 
-	public void setSuit(Suit suit) {
-		this.suit = suit;
-	}
+//	public void setSuit(Suit suit) {
+//		this.suit = suit;
+//	}
 
 	public Rank getRank() {
 		return rank;
 	}
 
-	public void setRank(Rank rank) {
-		this.rank = rank;
-	}
+//	public void setRank(Rank rank) {
+//		this.rank = rank;
+//	}
 
 	// hashcode
 	@Override
@@ -55,13 +60,8 @@ public class Card {
 		return rank == other.rank && suit == other.suit;
 	}
 
-//	@Override
-//	public String toString() {
-//		return "Card [suit=" + suit + ", rank=" + rank + "]";
-//	}
-
+	@Override
 	public String toString() {
-		return rank +"of"+suit;
+		return "Card [suit=" + suit + ", rank=" + rank + ", getValue()=" + getValue() + "]";
 	}
-
 }
