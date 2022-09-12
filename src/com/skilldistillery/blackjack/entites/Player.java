@@ -90,9 +90,4 @@ public class Player {
 		dealer.dealCard(this); // this.dealer = dealer
 
 	}
-
-	// stand
-	public void stand() {
-		// dealer game starts
-	}
 }
