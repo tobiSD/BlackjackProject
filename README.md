@@ -5,9 +5,8 @@
 Created a BlackJack Game App 
 
 Features
-	
-	This game features two players (a player and a dealer)
-	A deck of 52 cards 
+		This game features two players (a player and a dealer)
+		A deck of 52 cards 
 Game description
 At the start of the game each player is dealt two cards from the deack by the dealer and based on the combined value of the card
 each player will get to choose to hit or stay. 
