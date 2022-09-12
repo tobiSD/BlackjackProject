@@ -5,6 +5,7 @@
 Created a BlackJack Game App 
 
 Features
+	
 	This game features two players (a player and a dealer)
 	A deck of 52 cards 
 Game description
