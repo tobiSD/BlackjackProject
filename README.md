@@ -15,10 +15,15 @@ Game description:
 At the start of the game each player is dealt two cards from the deack by the dealer and based on the combined value of the card
 
 Each player will get to choose to hit or stay. 
+	
 	hit = asking for an aditional card 
+	
 	stay = game is over or if the combined value of the card in hand is over 21
+
 The player gets to start the game and once they done with their turn the dealer gets their turn to play the game.
+
 Once the  the player or dealer is dealth 21 the game is over 
+
 At the end of the game, the app displays who has more points 
 
 					What I learned 
