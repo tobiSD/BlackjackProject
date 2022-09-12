@@ -29,7 +29,6 @@ public class Player {
 
 	// player adds card to hand
 	public void addCardToHand(Card cards) {
-		//System.out.println(cards);
 		hand.addCard(cards);
 	}
 
@@ -55,48 +54,45 @@ public class Player {
 	}
 
 	// initial 2 cards
-	public void cardsdealt(int numCardsToDeal) {
+	public void cardsdealt(int numCardsToDeal, Player player) {
 		int numCardsDealt = 0;
 		while (numCardsDealt < numCardsToDeal) {
-			hand.addCard(dealer.dealCard());
+			dealer.dealCard(player);
 			numCardsDealt++;
-
 		}
 		showCard();
 		System.out.println("your total hand " + hand.getHandValue());
 	}
 
 	// hit or stand
-	public void hitorstand() { 
+	public void hitorstand() {
 		String choice = "";
 		System.out.println("Do you want to hit or stand");
 		choice = kb.next();
 		if (choice.equals("hit")) {
-			// player gets a new card from the remaining deck
 			hit();
-			// then display the previous two card plus new card and new card
 			showCard();
 			// returns new total
 			System.out.println(hand.getHandValue());
-			
+
 			if (hand.getHandValue() > 21) {
 				System.out.println("Game is over");
-			}else {
-				hitorstand();    //call a method in itself 
+			} else {
+				hitorstand();
 			}
 		} else {
 			System.out.println("You choose to stand");
 		}
 	}
 
-	//players hit
+	// player
 	public void hit() {
-		addCardToHand(dealer.dealCard());
+		dealer.dealCard(this); // this.dealer = dealer
+
 	}
-	
-	//stand
+
+	// stand
 	public void stand() {
-		//dealer game starts
-		
+		// dealer game starts
 	}
 }

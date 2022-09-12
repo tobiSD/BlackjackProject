@@ -6,12 +6,11 @@ public class BlackJackHand extends Hand {
 	}
 
 	public boolean isBlackjack() {
-		// returns true if the total value of the hand is equal to 21
-		return true;
+		return false;
 	}
 
 	public boolean isbust() {
-		// returns false if it over 21
+
 		return false;
 	}
 

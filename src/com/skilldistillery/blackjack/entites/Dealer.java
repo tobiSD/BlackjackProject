@@ -12,32 +12,33 @@ public class Dealer extends Player {
 		deck.shuffle();
 	}
 
-	public Card dealCard() {
-		return deck.dealCard();
-	}
-
-	public void addCardToHand(Card card) {
-		hand.addCard(card);
+	public void dealCard(Player player) {
+		Card cardtodeal = deck.dealCard();
+		player.addCardToHand(cardtodeal);
 	}
 
 	public void showonecard() {
-		//System.out.println(hand.getCard(0));
+		// System.out.println(hand.getCards());
+		System.out.println(hand.getCard(0));
 		System.out.println("Second card is face down");
+
 	}
-	
-	// initial 2 cards
-	public void cardsdealt(int numCardsToDeal) {
-		int numCardsDealt = 0;
-		while (numCardsDealt < numCardsToDeal) {
-			addCardToHand(dealCard());
-			numCardsDealt++;
+
+	public void dealerhitorstand() {
+		while (true) {
+			int total = hand.getHandValue();
+			System.out.println(total);
+			if (hand.getHandValue() <= 17) {
+				dealerhit();
+			} else {
+				System.out.println("You choose to stay");
+				break;
+			}
 		}
 		showCard();
-		System.out.println("your total hand " + hand.getHandValue());
 	}
-	
-	//dealers hit
-	public void hit() {
-		addCardToHand(dealCard());
+
+	public void dealerhit() {
+		dealCard(this);
 	}
 }

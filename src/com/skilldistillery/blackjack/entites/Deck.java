@@ -16,7 +16,6 @@ public class Deck {
 	// number of cards still in the deck
 	public int checkDeckSize() {
 		return deck.size();
-
 	}
 
 	// add card to deck
@@ -48,11 +47,6 @@ public class Deck {
 	public void draw(Card cards) {
 		System.out.println("drawing " + cards);
 	}
-
-//	@Override
-//	public String toString() {
-//		return "Deck [deck=" + deck + "]";
-//	}
 
 	public String toString() {
 		String output = " ";

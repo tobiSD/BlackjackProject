@@ -12,12 +12,14 @@ each player will get to choose to hit or stay.
 	stay = game is over or if the combined value of the card in hand is over 21
 The player gets to start the game and once they done with their turn the dealer gets their turn to play the game.
 Once the  the player or dealer is dealth 21 the game is over 
+At the end of the game, the app displays who has more points 
 
 ##What I learned 
 A deeper dive into object oriented programming
 learning how to use multiple classes and methods 
 how to properly call methods and learning that methods can be called multple times based on where and when they are needed
 Placement is very important and help to diplay results properly to the screen.
+Undersatnding the actual logic of the game itself is very important. 
 
 
 ##Technologies used 

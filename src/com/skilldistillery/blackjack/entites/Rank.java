@@ -7,14 +7,11 @@ public enum Rank {
 
 	private int value;
 
-
 	Rank(int value) {
 		this.value = value;
-		
 	}
 	
 	public int getValue() {
 		return value;
 	}
-	
 }
